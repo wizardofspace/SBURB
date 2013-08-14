@@ -6,11 +6,15 @@ package com.skaia.client;
  * server, &c.
  * @author Kevin
  */
+
 public class ClientStart {
+
     /**
      * Invoked upon choosing "Client" as mode of operation.
      */
+
     public static void run() {
         
     }
+
 }

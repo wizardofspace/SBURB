@@ -14,7 +14,7 @@ public class SBURBStart {
      * The simple main method.
      */
     public static void main(String[] args) {
-        //Todo: We can change this around, to make it prettier later.
-        //Todo: Implement me! Call ServerStart.run(); or ClientStart.run();
+        //TODO: We can change this around, to make it prettier later.
+        //TODO: Implement me! Call ServerStart.run(); or ClientStart.run();
     }
 }
