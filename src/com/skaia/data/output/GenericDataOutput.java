@@ -7,11 +7,8 @@
 //</editor-fold>
 package com.skaia.data.output;
 
-import com.skaia.data.input.GenericDataInput;
-import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.OutputStream;
-import java.nio.charset.Charset;
 
 
 /**
@@ -19,7 +16,6 @@ import java.nio.charset.Charset;
  * @version 1.0
  */
 public abstract class GenericDataOutput extends OutputStream implements DataSink {
-    
     public GenericDataOutput() {
         
     }
@@ -90,7 +86,7 @@ public abstract class GenericDataOutput extends OutputStream implements DataSink
 
     @Override
     public void writeLengthASCIIString(String asciistr) {
-        writeShort((short)asciistr.length());
+        writeShort((short) asciistr.length());
         writeASCIIString(asciistr);
     }
 
@@ -109,7 +105,7 @@ public abstract class GenericDataOutput extends OutputStream implements DataSink
 
     @Override
     public void writeLengthUnicodeString(String asciistr) {
-        writeShort((short)asciistr.length());
+        writeShort((short) asciistr.length());
         writeUnicodeString(asciistr);
     }
 

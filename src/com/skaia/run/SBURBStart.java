@@ -11,12 +11,11 @@ package com.skaia.run;
  */
 
 public class SBURBStart {
-
-	// Simple main method
+    /**
+     * Simple main method.
+     */
     public static void main(String[] args) {
-
-		// TODO: We can change this around, to make it prettier later.
-		// TODO: Implement me! Call ServerStart.run(); or ClientStart.run();
-
+        // TODO: We can change this around, to make it prettier later.
+        // TODO: Implement me! Call ServerStart.run(); or ClientStart.run();
     }
 }

@@ -16,4 +16,10 @@ public class LoginPacketPrepare {
         d.writeByte(Constants.OP_SERVER_CONNECTION_PING);
         return d;
     }
+
+    public static DataSink prepareLoginGoahead() {
+        DataSink d = new ByteArrayDataOutputStream();
+        d.writeByte(Constants.OP_SERVER_LOGIN_GOAHEAD);
+        return d;
+    }
 }

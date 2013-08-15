@@ -2,6 +2,7 @@ package com.skaia.server;
 
 import com.skaia.server.net.ServerMessageHandler;
 import com.skaia.Constants;
+import com.skaia.server.login.LoginPacketHandler;
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.ChannelInitializer;
 import io.netty.channel.EventLoopGroup;
@@ -24,6 +25,11 @@ public class ServerStart {
      * Invoked upon choosing "Server" as mode of operation.
      */
     public static void run() {
+        /* Server Handler initialization */
+        GameInformation.initialize(); //loads all of the game info
+        LoginPacketHandler.initialize(); //Initializes the AuthenticationHandler
+        
+        /* Network initialization */
         // Start Thread Loops
         EventLoopGroup bossGroup = new NioEventLoopGroup();
         EventLoopGroup workerGroup = new NioEventLoopGroup();
@@ -41,7 +47,7 @@ public class ServerStart {
                             new ByteArrayDecoder(),
                             new ServerMessageHandler());
                 }
-             });
+            });
 
             // Bind to port and start to accept incoming connections.
             b.bind(Constants.PORT).sync().channel().closeFuture().sync();
