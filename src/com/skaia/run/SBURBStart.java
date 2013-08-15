@@ -1,4 +1,4 @@
-package com.skaia.sburb.run;
+package com.skaia.run;
 
 /**
  * This is the beginning of the SBURB program.

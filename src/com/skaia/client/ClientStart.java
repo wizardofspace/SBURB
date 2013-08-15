@@ -1,4 +1,4 @@
-package com.skaia.sburb.client;
+package com.skaia.client;
 
 /**
  * The starting point for Client operations.
