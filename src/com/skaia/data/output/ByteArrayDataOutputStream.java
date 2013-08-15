@@ -1,25 +1,14 @@
-//<editor-fold defaultstate="collapsed" desc="owner">
-/**
- * This file was created by and is maintained by ::Kevin Siouve:: Who has
- * immediate ownership over all classes in packages com.mag.* and org.jelphi
- * (with noted exceptions.)
- */
-//</editor-fold>
-
 package com.skaia.data.output;
 
 import io.netty.channel.ChannelHandlerContext;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
-import java.io.OutputStream;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 
 
 /**
- * @author Kevin August <KevinAnonymousXD@gmail.com>
- * @version 1.0
+ * @author Kevin
  */
+
 public class ByteArrayDataOutputStream extends GenericDataOutput {
     private ByteArrayOutputStream baos;
 

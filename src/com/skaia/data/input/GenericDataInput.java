@@ -1,17 +1,9 @@
-//<editor-fold defaultstate="collapsed" desc="owner">
-/**
- * This file was created by and is maintained by ::Kevin Siouve:: Who has
- * immediate ownership over all classes in packages com.mag.* and org.jelphi
- * (with noted exceptions.)
- */
-//</editor-fold>
 package com.skaia.data.input;
 
 import java.io.InputStream;
 
 /**
- * @author Kevin August <KevinAnonymousXD@gmail.com>
- * @version 1.0
+ * @author Kevin
  */
 public abstract class GenericDataInput extends InputStream implements DataSource {
     private static final int IO_EOF = -1;

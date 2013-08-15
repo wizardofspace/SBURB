@@ -3,9 +3,9 @@ package com.skaia.data.input;
 import java.io.IOException;
 
 /**
- *
  * @author Kevin
  */
+
 public class ByteArrayDataInputStream extends GenericDataInput {
     private byte[] array;
     int index;

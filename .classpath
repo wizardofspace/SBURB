@@ -2,5 +2,17 @@
 <classpath>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="C:/Users/Gil/Documents/Java/Eclipse Workspace/SBURB/libs/jinput.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Gil/Documents/Java/Eclipse Workspace/SBURB/libs/lwjgl.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Gil/Documents/Java/Eclipse Workspace/SBURB/libs/lwjgl_util.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Gil/Documents/Java/Eclipse Workspace/SBURB/libs/lwjgl-debug.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Gil/Documents/Java/Eclipse Workspace/SBURB/libs/lzma.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Gil/Documents/Java/Eclipse Workspace/SBURB/libs/netty-all-4.0.7.Final-javadoc.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Gil/Documents/Java/Eclipse Workspace/SBURB/libs/netty-buffer-4.0.7.Final.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Gil/Documents/Java/Eclipse Workspace/SBURB/libs/netty-codec-4.0.7.Final.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Gil/Documents/Java/Eclipse Workspace/SBURB/libs/netty-codec-socks-4.0.7.Final.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Gil/Documents/Java/Eclipse Workspace/SBURB/libs/netty-common-4.0.7.Final.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Gil/Documents/Java/Eclipse Workspace/SBURB/libs/netty-handler-4.0.7.Final.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Gil/Documents/Java/Eclipse Workspace/SBURB/libs/netty-transport-4.0.7.Final.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

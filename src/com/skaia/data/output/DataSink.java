@@ -1,23 +1,14 @@
-//<editor-fold defaultstate="collapsed" desc="owner">
-/**
- * This file was created by and is maintained by ::Kevin Siouve:: Who has
- * immediate ownership over all classes in packages com.mag.* and org.jelphi
- * (with noted exceptions.)
- */
-//</editor-fold>
 package com.skaia.data.output;
 
 import io.netty.channel.ChannelHandlerContext;
-import io.netty.channel.ChannelOutboundHandler;
 import java.io.Closeable;
 import java.io.Flushable;
-import java.io.OutputStream;
 
 /**
  * A data sink is a buffer that is written to, then flushed to a seperate stream.
- * @author Kevin August <KevinAnonymousXD@gmail.com>
- * @version 1.0
+ * @author Kevin
  */
+
 public interface DataSink extends Closeable, Flushable {
     /**
      * Writes a byte to the buffer, which is flushed to the stream using writeTo().
