@@ -18,8 +18,13 @@ import io.netty.util.AttributeKey;
  */
 public class ServerMessageHandler extends ChannelInboundHandlerAdapter {
     @Override
-    public void channelActive(ChannelHandlerContext ctx) throws Exception {
+    public void channelRegistered(ChannelHandlerContext ctx) throws Exception {
         LoginPacketPrepare.prepareConnectionPing().writeTo(ctx);
+    }
+
+    @Override
+    public void channelUnregistered(ChannelHandlerContext ctx) throws Exception {
+        //TODO: Handle client logout if possible, etc.
     }
     
     @Override
@@ -54,11 +59,7 @@ public class ServerMessageHandler extends ChannelInboundHandlerAdapter {
                 LoginPacketHandler.handleConnectionPong(ctx, ds);
                 break;
             case Constants.OP_CLIENT_AUTHENTICATION_ATTEMPT:
-                Character c = LoginPacketHandler.handleAuthenticationAttempt(ctx, ds);
-                if (c != null) {
-                    ctx.attr(new AttributeKey<Character>("player")).set(c);
-                    //TODO: If in register mode, send to register mode screen, otherwise send to logged in map.
-                }
+                LoginPacketHandler.handleAuthenticationAttempt(ctx, ds);
                 break;
         }
     }

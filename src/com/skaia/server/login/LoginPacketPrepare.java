@@ -22,4 +22,11 @@ public class LoginPacketPrepare {
         d.writeByte(Constants.OP_SERVER_LOGIN_GOAHEAD);
         return d;
     }
+
+    static DataSink prepareLoginResponse(int response) {
+        DataSink d = new ByteArrayDataOutputStream();
+        d.writeByte(Constants.OP_SERVER_AUTHENTICATION_RESPONSE);
+        d.writeInt(response);
+        return d;
+    }
 }

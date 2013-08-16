@@ -20,9 +20,10 @@ public class LoginPacketHandler {
         LoginPacketPrepare.prepareLoginGoahead().writeTo(ctx); //respond with a goahead.
     }
 
-    public static Character handleAuthenticationAttempt(ChannelHandlerContext ctx, DataSource ds) {
-        //TODO: returns a character instance if successful, otherwise null.
+    public static void handleAuthenticationAttempt(ChannelHandlerContext ctx, DataSource ds) {
+        String username = ds.readLengthASCIIString();
+        String password = ds.readLengthASCIIString();
+        //TODO: Attach player to ctx in ctx.attr() and vice-versa in a constructor.
         //TODO: Also, send a AUTHENTICATION_REPONSE packet to send a response.
-        return null;
     }
 }

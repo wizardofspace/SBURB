@@ -56,6 +56,7 @@ public class ClientStart {
              });
 
             // Start the connection attempt.
+            System.out.println("Just about to connect!"); //temporary
             b.connect(ipAddress, Constants.PORT).sync().channel().closeFuture().sync();
         } catch (InterruptedException ex) {
             Logger.getLogger(ClientStart.class.getName()).log(Level.SEVERE, null, ex);

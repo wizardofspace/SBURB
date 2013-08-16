@@ -48,7 +48,7 @@ public class ServerStart {
                             new ServerMessageHandler());
                 }
             });
-
+            
             // Bind to port and start to accept incoming connections.
             b.bind(Constants.PORT).sync().channel().closeFuture().sync();
         } catch (InterruptedException ex) {

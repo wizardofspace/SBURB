@@ -14,4 +14,12 @@ public class LoginPacketPrepare {
         d.writeByte(Constants.OP_CLIENT_CONNECTION_PONG);
         return d;
     }
+
+    public static DataSink prepareLoginAttempt(String username, String password) {
+        DataSink d = new ByteArrayDataOutputStream();
+        d.writeByte(Constants.OP_CLIENT_AUTHENTICATION_ATTEMPT);
+        d.writeLengthASCIIString(username);
+        d.writeLengthASCIIString(password);
+        return d;
+    }
 }

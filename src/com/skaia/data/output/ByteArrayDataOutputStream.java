@@ -24,6 +24,7 @@ public class ByteArrayDataOutputStream extends GenericDataOutput {
     @Override
     public void writeTo(ChannelHandlerContext ctx) {
         ctx.write(baos.toByteArray());
+        ctx.flush();
     }
 
     @Override
